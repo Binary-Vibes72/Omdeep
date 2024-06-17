@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Omdeep</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo.svg" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#services" class="smoothscroll">Services</a></li>
+                        <li><a href="#folio" class="smoothscroll">Work</a></li>
+                        <li><a href="#footer" class="smoothscroll">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+                    <ul class="s-header__social">
+                        <li>
+                            <a target=”_blank” href="https://www.instagram.com/omdeep_enterprises/?igsh=MXdrZzU2YjRnOHJ1Yw%3D%3D">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target=”_blank” href="https://www.facebook.com/omdeep.enterprises?mibextid=ZbWKwL">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+
+                    </ul> <!-- s-header__social -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+            <!-- intro
+            ----------------------------------------------- -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="s-intro__bg"></div>
+
+                <div class="row s-intro__content">
+
+                    <div class="s-intro__content-bg"></div>
+
+                    <div class="column lg-12 s-intro__content-inner">
+                        
+                        <h1 class="s-intro__content-title">
+                        We provide creative <br>
+                        solutions to turn your <br>
+                        ideas into reality.
+                        </h1>
+
+                        <div class="s-intro__content-buttons">
+                            <a href="#about" class="btn btn--stroke s-intro__content-btn smoothscroll">More About Us</a>
+                        </div>
+                        
+                    </div> <!-- s-intro__content-inner -->
+
+                </div> <!-- s-intro__content -->
+
+                <div class="s-intro__scroll-down">
+                    <a href="#about" class="smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div> <!-- s-intro__scroll-down -->
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- about
+            ----------------------------------------------- -->
+            <section id="about" class="s-about target-section">
+
+                <div class="row section-header" data-num="01">
+                    <h3 class="column lg-12 section-header__pretitle pretitle text-pretitle">Who We Are</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                        omdeep is a Furniture and Metal Fabricators. 
+                        We shape your ideas and design thoughtful 
+                        into reality.
+                        </h2>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                            At OmDeep Enterprises, we are dedicated to transforming spaces with our exceptional furniture and metal fabrication services. 
+                            Founded on the principles of quality, craftsmanship, and customer satisfaction, we take pride in creating products that not only meet but exceed our client's expectations.
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div class="row process-list list-block show-ctr block-lg-one-half block-tab-whole">
+    
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Our Mission</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                Our mission is to provide top-notch furniture and metal fabrication solutions that enhance the beauty and functionality of any space. We strive to combine innovative design with superior craftsmanship to deliver products that are both aesthetically pleasing and durable.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Our Services</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                Furniture Fabrication: We offer a wide range of custom furniture pieces, from elegant home furnishings to functional office furniture. Our designs are tailored to fit the unique needs and tastes of our clients, ensuring every piece is a perfect blend of form and function.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Expert Craftsmanship</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                Our team of skilled artisans and craftsmen bring years of experience and
+                                a passion for excellence to every project. We use the finest materials and the latest techniques  
+                                to ensure the highest quality. 
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Custom Solutions</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            We understand that each client has unique needs and preferences. Our 
+                            custom solutions are designed to meet those specific requirements, ensuring complete 
+                            satisfaction.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+
+                </div> <!-- end process-list -->
+
+            </section> <!-- end s-about -->
+
+
+            <!-- services
+            ----------------------------------------------- -->
+            <section id="services" class="s-services target-section">
+
+                <div class="row section-header" data-num="02">
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">What We Do</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                            Our services are tailored to make your space shine and stand out.
+                        </h2>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                            At OmDeep Enterprises, we offer a 
+                            comprehensive range of services to meet all your 
+                            furniture and metal fabrication needs:
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div class="row services-list list-block block-lg-one-half block-tab-whole">
+    
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg>
+                            </div>
+                            <h3 class="h5">Furniture Fabrication</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                We offer a wide range of custom furniture pieces, from elegant home furnishings to functional office furniture. Our designs are tailored to fit the unique needs and tastes of our clients, ensuring every piece is a perfect blend of form and function. Whether you need a bespoke dining table, a stylish sofa, or a practical office desk, we deliver high-quality furniture that enhances any environment.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m21.406 6.086-9-4a1.001 1.001 0 0 0-.813 0l-9 4c-.02.009-.034.024-.054.035-.028.014-.058.023-.084.04-.022.015-.039.034-.06.05a.87.87 0 0 0-.19.194c-.02.028-.041.053-.059.081a1.119 1.119 0 0 0-.076.165c-.009.027-.023.052-.031.079A1.013 1.013 0 0 0 2 7v10c0 .396.232.753.594.914l9 4c.13.058.268.086.406.086a.997.997 0 0 0 .402-.096l.004.01 9-4A.999.999 0 0 0 22 17V7a.999.999 0 0 0-.594-.914zM12 4.095 18.538 7 12 9.905l-1.308-.581L5.463 7 12 4.095zM4 16.351V8.539l7 3.111v7.811l-7-3.11zm9 3.11V11.65l7-3.111v7.812l-7 3.11z"></path></svg>
+                            </div>
+                            <h3 class="h5">Metal Fabrication</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                Our metal fabrication services include creating bespoke metal structures, decorative pieces, and practical installations. With precision and attention to detail, we bring our clients' visions to life, whether for residential, commercial, or industrial purposes. From custom metal gates to intricate railings and durable metal frames, our fabrication work combines strength with beauty.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 14c-2.206 0-4 1.794-4 4s1.794 4 4 4a4.003 4.003 0 0 0 3.998-3.98H10V16h4v2.039h.004A4.002 4.002 0 0 0 18 22c2.206 0 4-1.794 4-4s-1.794-4-4-4h-2v-4h2c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4v2h-4V5.98h-.002A4.003 4.003 0 0 0 6 2C3.794 2 2 3.794 2 6s1.794 4 4 4h2v4H6zm2 4c0 1.122-.879 2-2 2s-2-.878-2-2 .879-2 2-2h2v2zm10-2c1.121 0 2 .878 2 2s-.879 2-2 2-2-.878-2-2v-2h2zM16 6c0-1.122.879-2 2-2s2 .878 2 2-.879 2-2 2h-2V6zM6 8c-1.121 0-2-.878-2-2s.879-2 2-2 2 .878 2 2v2H6zm4 2h4v4h-4v-4z"></path></svg>
+                            </div>
+                            <h3 class="h5">Home Decor</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                Transform your living spaces with our unique home décor solutions. We provide a variety of decorative items, including metal arts, fabricated railings, and custom-made accents that add personality and charm to any room. Our home décor products are designed to complement your style and create a welcoming atmosphere in your home.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 3H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h4l-1.8 2.4 1.6 1.2 2.7-3.6h3l2.7 3.6 1.6-1.2L16 18h4c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 16V5h16l.001 11H4z"></path><path d="M6 12h4v2H6z"></path></svg> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-ellipsis"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
+                            </div>
+                            <h3 class="h5">Metal Parapet</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                Secure and beautify your property with our expertly crafted Metal Parapet solutions. We offer a range of fencing options, from classic wrought iron designs to modern metal panels, providing both security and aesthetic appeal. Our Metal Parapet is designed to be durable, low-maintenance, and stylish, making it a perfect addition to any property.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                </div> <!-- end process-list -->
+
+            </section> <!-- end s-services -->
+
+
+            <!-- portfolio
+            ----------------------------------------------- -->
+            <section id="folio" class="s-folio target-section">
+
+                <div class="row section-header light-on-dark" data-num="03">
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">Recent Works</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                            Here are some of our favorite projects we have done lately. Feel free to check them out.
+                        </h2>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                            Our commitment to quality, innovative design, and customer satisfaction is reflected in every project we undertake. Whether you need custom furniture, metal fabrication, home décor, or Metal Parapet, OmDeep Enterprises is here to bring your vision to life with exceptional craftsmanship and creativity
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div id="bricks" class="row bricks">
+                    <div class="column lg-12 masonry">
+                        <div class="bricks-wrapper">
+
+                            <div class="grid-sizer"></div>
+
+                            <article class="brick brick--double entry">
+                                <a href="#modal-01" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/white_turban@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Immersive Design</div>
+                                        <h4 class="entry__title">White stairs</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick brick--double entry">
+                                <a href="#modal-02" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/caffeine_and_tulips@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Work place</div>
+                                        <h4 class="entry__title">Clean and Functional Desk</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-03" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/grayscale@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Main Wall Decor</div>
+                                        <h4 class="entry__title">TV Cabinates</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-04" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/lamp@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Decor Space</div>
+                                        <h4 class="entry__title">Shelves</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-05" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/tropical@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Kitchen Design</div>
+                                        <h4 class="entry__title">Trolley</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-06" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/woodcraft@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Fencing</div>
+                                        <h4 class="entry__title">Beutiful and Secure Metal Parapet</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                        </div> <!-- end bricks-wrapper -->
+                    </div> <!-- end masonry -->
+                </div> <!-- end bricks -->
+
+
+                <!-- modal templates popup
+                -------------------------------------------- -->
+                <div id="modal-01" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-turban.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>White stairs</h5>
+                            <p>Our beautifully designed white stairs are not just a means of moving between levels; they are a statement piece. Crafted with precision, they add elegance and sophistication to any home or commercial space. The clean lines and pristine finish make these stairs a standout feature that seamlessly integrates with modern interior designs.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Immersive Design</li>
+                                <li>White stairs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-02" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-tulips.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Clean and Functional Desk</h5>
+                            <p>We design desks that are both clean in design and highly functional. Perfect for home offices, study areas, or corporate environments, our desks provide ample workspace and are designed with ergonomic principles in mind. Their sleek, minimalist design ensures they fit effortlessly into any setting while offering practical features like built-in storage and cable management.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Work place</li>
+                            </ul>
+                        </div>
+            
+                        
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-03" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-grayscale.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>TV Cabinates</h5>
+                            <p>Our TV cabinets are designed to be the perfect blend of style and functionality. Whether you prefer a modern look with sleek lines and a high-gloss finish or a more traditional wooden design, our cabinets provide ample storage for media equipment and accessories, while enhancing the overall aesthetics of your living room.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Main Wall Decor</li>
+                            </ul>
+                        </div>
+            
+                        
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-04" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-lamp.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Shelves</h5>
+                            <p>From floating shelves to custom-built shelving units, we offer a variety of shelving solutions that maximize space and add a decorative touch to your interiors. Our shelves are designed to be sturdy and stylish, providing practical storage while complementing the décor of any room.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Decor Space</li>
+                            </ul>
+                        </div>
+            
+                        
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-05" hidden>
+                    <div class="modal-popup">
+
+                        <img src="images/folio/gallery/g-tropical.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Trolley</h5>
+                            <p>Our versatile trolleys are perfect for both residential and commercial use. Designed with mobility and functionality in mind, these trolleys are ideal for serving, storage, or even as mobile workstations. Crafted from high-quality materials, they are durable, easy to maneuver, and aesthetically pleasing.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Kitchen Design</li>
+                            </ul>
+                        </div>
+            
+                        
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-06" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-woodcraft.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Beutiful and Secure Metal Parapet</h5>
+                            <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Beutiful and</li>
+                                <li>Secure Metal Parapet</li>
+                            </ul>
+                        </div>
+            
+                        
+                    </div>
+                </div> <!-- end modal -->
+
+
+        <!-- # site-footer
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row section-header" data-num="04">
+                <h3 class="column lg-12 section-header__pretitle text-pretitle">Get In Touch</h3>
+                <div class="column lg-6 stack-on-1100 section-header__primary">
+                    <h2 class="title text-display-1">
+                    Have an idea or an epic project in mind? Talk to us. 
+                    Let's work together and make something great. 
+                    Drop us a line at <a href="mailto:omdeepenterprises108@gmail.com" title="">omdeepenterprises108@gmail.com</a>
+                    </h2>
+                </div>    
+                <div class="column lg-6 stack-on-1100 section-header__secondary">
+                    
+                    <div class="contact-block">
+                        <h6>Where To Find Us</h6>
+                        <p>
+                        Gat no.440, Office/Shop No: 01, <br>
+                        Near Maruti Mandir, Bajarang Nagar<br>
+                        Satpur, Ambad-link Road, Nashik 07
+                        </p>
+                    </div>
+
+                    <div class="contact-block">
+                        <h6>Contact Infos</h6>
+                        <ul class="contact-list">
+                            <li><a href="tel:9960099843">+91 9960099843</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row list-block block-lg-one-half block-tab-whole block-stack-on-1000 s-footer__btns">
+                <div class="column list-block__item">
+                    <div class="s-footer__contact-btn">
+                        <a href="mailto:omdeepenterprises108@gmail.com" class="btn btn--primary u-fullwidth">
+                            Let's Talk 
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end s-footer__btns -->
+
+            <div class="row s-footer__bottom">
+
+                <div class="column lg-6 tab-12 s-footer__bottom-left">
+                    <ul class="s-footer__social">
+                        <li>
+                            <a target=”_blank” href="https://www.instagram.com/omdeep_enterprises/?igsh=MXdrZzU2YjRnOHJ1Yw%3D%3D">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle fill:rgba(255, 255, 255, 255) cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target=”_blank” href="https://www.facebook.com/omdeep.enterprises?mibextid=ZbWKwL">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column lg-6 tab-12 s-footer__bottom-right">
+                    <div class="ss-copyright">
+                        <span>© Copyright Omdeep Enterprises</span> 
+                        <span>Developed by <a href="https://www.linkedin.com/in/vaibhav-sonawane-0216631a5/" target="_blank">Binary Vibes</a> </span>
+                    </div>
+                </div>
+
+            </div> <!-- s-footer__bottom -->
+    
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </footer> <!-- end footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
